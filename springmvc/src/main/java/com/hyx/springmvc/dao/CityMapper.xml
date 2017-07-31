@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hyx.springmvc.dao.CityDao">
+  <resultMap id="BaseResultMap" type="com.hyx.springmvc.bean.City">
+    <id column="Fid" jdbcType="INTEGER" property="fid" />
+    <result column="Fcityname_cn" jdbcType="VARCHAR" property="fcitynameCn" />
+    <result column="Fcityname_en" jdbcType="VARCHAR" property="fcitynameEn" />
+    <result column="Fcityname_py" jdbcType="VARCHAR" property="fcitynamePy" />
+    <result column="Fcityname_pyj" jdbcType="VARCHAR" property="fcitynamePyj" />
+    <result column="Fcityname_tw" jdbcType="VARCHAR" property="fcitynameTw" />
+    <result column="Fcityname_hk" jdbcType="VARCHAR" property="fcitynameHk" />
+    <result column="Fcityname_local" jdbcType="VARCHAR" property="fcitynameLocal" />
+    <result column="Fcountry" jdbcType="INTEGER" property="fcountry" />
+    <result column="Fadmin" jdbcType="INTEGER" property="fadmin" />
+    <result column="Fparent_node" jdbcType="INTEGER" property="fparentNode" />
+    <result column="Fparent" jdbcType="INTEGER" property="fparent" />
+    <result column="FLat" jdbcType="DOUBLE" property="flat" />
+    <result column="FLon" jdbcType="DOUBLE" property="flon" />
+    <result column="Fdeleted" jdbcType="TINYINT" property="fdeleted" />
+    <result column="Faccuname" jdbcType="VARCHAR" property="faccuname" />
+    <result column="Fis_node" jdbcType="TINYINT" property="fisNode" />
+    <result column="Ftime_zone" jdbcType="VARCHAR" property="ftimeZone" />
+    <result column="Fprovince_cn" jdbcType="VARCHAR" property="fprovinceCn" />
+    <result column="Fpersistence" jdbcType="TINYINT" property="fpersistence" />
+    <result column="Fcityname_zy" jdbcType="VARCHAR" property="fcitynameZy" />
+    <result column="Fcityname_zyj" jdbcType="VARCHAR" property="fcitynameZyj" />
+    <result column="Ftag" jdbcType="TINYINT" property="ftag" />
+    <result column="Falias" jdbcType="VARCHAR" property="falias" />
+    <result column="Frank" jdbcType="INTEGER" property="frank" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    Fid, Fcityname_cn, Fcityname_en, Fcityname_py, Fcityname_pyj, Fcityname_tw, Fcityname_hk, 
+    Fcityname_local, Fcountry, Fadmin, Fparent_node, Fparent, FLat, FLon, Fdeleted, Faccuname, 
+    Fis_node, Ftime_zone, Fprovince_cn, Fpersistence, Fcityname_zy, Fcityname_zyj, Ftag, 
+    Falias, Frank
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from city
+    where Fid = #{fid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from city
+    where Fid = #{fid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hyx.springmvc.bean.City">
+    insert into city (Fid, Fcityname_cn, Fcityname_en, 
+      Fcityname_py, Fcityname_pyj, Fcityname_tw, 
+      Fcityname_hk, Fcityname_local, Fcountry, 
+      Fadmin, Fparent_node, Fparent, 
+      FLat, FLon, Fdeleted, 
+      Faccuname, Fis_node, Ftime_zone, 
+      Fprovince_cn, Fpersistence, Fcityname_zy, 
+      Fcityname_zyj, Ftag, Falias, 
+      Frank)
+    values (#{fid,jdbcType=INTEGER}, #{fcitynameCn,jdbcType=VARCHAR}, #{fcitynameEn,jdbcType=VARCHAR}, 
+      #{fcitynamePy,jdbcType=VARCHAR}, #{fcitynamePyj,jdbcType=VARCHAR}, #{fcitynameTw,jdbcType=VARCHAR}, 
+      #{fcitynameHk,jdbcType=VARCHAR}, #{fcitynameLocal,jdbcType=VARCHAR}, #{fcountry,jdbcType=INTEGER}, 
+      #{fadmin,jdbcType=INTEGER}, #{fparentNode,jdbcType=INTEGER}, #{fparent,jdbcType=INTEGER}, 
+      #{flat,jdbcType=DOUBLE}, #{flon,jdbcType=DOUBLE}, #{fdeleted,jdbcType=TINYINT}, 
+      #{faccuname,jdbcType=VARCHAR}, #{fisNode,jdbcType=TINYINT}, #{ftimeZone,jdbcType=VARCHAR}, 
+      #{fprovinceCn,jdbcType=VARCHAR}, #{fpersistence,jdbcType=TINYINT}, #{fcitynameZy,jdbcType=VARCHAR}, 
+      #{fcitynameZyj,jdbcType=VARCHAR}, #{ftag,jdbcType=TINYINT}, #{falias,jdbcType=VARCHAR}, 
+      #{frank,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hyx.springmvc.bean.City">
+    insert into city
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="fid != null">
+        Fid,
+      </if>
+      <if test="fcitynameCn != null">
+        Fcityname_cn,
+      </if>
+      <if test="fcitynameEn != null">
+        Fcityname_en,
+      </if>
+      <if test="fcitynamePy != null">
+        Fcityname_py,
+      </if>
+      <if test="fcitynamePyj != null">
+        Fcityname_pyj,
+      </if>
+      <if test="fcitynameTw != null">
+        Fcityname_tw,
+      </if>
+      <if test="fcitynameHk != null">
+        Fcityname_hk,
+      </if>
+      <if test="fcitynameLocal != null">
+        Fcityname_local,
+      </if>
+      <if test="fcountry != null">
+        Fcountry,
+      </if>
+      <if test="fadmin != null">
+        Fadmin,
+      </if>
+      <if test="fparentNode != null">
+        Fparent_node,
+      </if>
+      <if test="fparent != null">
+        Fparent,
+      </if>
+      <if test="flat != null">
+        FLat,
+      </if>
+      <if test="flon != null">
+        FLon,
+      </if>
+      <if test="fdeleted != null">
+        Fdeleted,
+      </if>
+      <if test="faccuname != null">
+        Faccuname,
+      </if>
+      <if test="fisNode != null">
+        Fis_node,
+      </if>
+      <if test="ftimeZone != null">
+        Ftime_zone,
+      </if>
+      <if test="fprovinceCn != null">
+        Fprovince_cn,
+      </if>
+      <if test="fpersistence != null">
+        Fpersistence,
+      </if>
+      <if test="fcitynameZy != null">
+        Fcityname_zy,
+      </if>
+      <if test="fcitynameZyj != null">
+        Fcityname_zyj,
+      </if>
+      <if test="ftag != null">
+        Ftag,
+      </if>
+      <if test="falias != null">
+        Falias,
+      </if>
+      <if test="frank != null">
+        Frank,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="fid != null">
+        #{fid,jdbcType=INTEGER},
+      </if>
+      <if test="fcitynameCn != null">
+        #{fcitynameCn,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynameEn != null">
+        #{fcitynameEn,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynamePy != null">
+        #{fcitynamePy,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynamePyj != null">
+        #{fcitynamePyj,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynameTw != null">
+        #{fcitynameTw,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynameHk != null">
+        #{fcitynameHk,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynameLocal != null">
+        #{fcitynameLocal,jdbcType=VARCHAR},
+      </if>
+      <if test="fcountry != null">
+        #{fcountry,jdbcType=INTEGER},
+      </if>
+      <if test="fadmin != null">
+        #{fadmin,jdbcType=INTEGER},
+      </if>
+      <if test="fparentNode != null">
+        #{fparentNode,jdbcType=INTEGER},
+      </if>
+      <if test="fparent != null">
+        #{fparent,jdbcType=INTEGER},
+      </if>
+      <if test="flat != null">
+        #{flat,jdbcType=DOUBLE},
+      </if>
+      <if test="flon != null">
+        #{flon,jdbcType=DOUBLE},
+      </if>
+      <if test="fdeleted != null">
+        #{fdeleted,jdbcType=TINYINT},
+      </if>
+      <if test="faccuname != null">
+        #{faccuname,jdbcType=VARCHAR},
+      </if>
+      <if test="fisNode != null">
+        #{fisNode,jdbcType=TINYINT},
+      </if>
+      <if test="ftimeZone != null">
+        #{ftimeZone,jdbcType=VARCHAR},
+      </if>
+      <if test="fprovinceCn != null">
+        #{fprovinceCn,jdbcType=VARCHAR},
+      </if>
+      <if test="fpersistence != null">
+        #{fpersistence,jdbcType=TINYINT},
+      </if>
+      <if test="fcitynameZy != null">
+        #{fcitynameZy,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynameZyj != null">
+        #{fcitynameZyj,jdbcType=VARCHAR},
+      </if>
+      <if test="ftag != null">
+        #{ftag,jdbcType=TINYINT},
+      </if>
+      <if test="falias != null">
+        #{falias,jdbcType=VARCHAR},
+      </if>
+      <if test="frank != null">
+        #{frank,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hyx.springmvc.bean.City">
+    update city
+    <set>
+      <if test="fcitynameCn != null">
+        Fcityname_cn = #{fcitynameCn,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynameEn != null">
+        Fcityname_en = #{fcitynameEn,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynamePy != null">
+        Fcityname_py = #{fcitynamePy,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynamePyj != null">
+        Fcityname_pyj = #{fcitynamePyj,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynameTw != null">
+        Fcityname_tw = #{fcitynameTw,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynameHk != null">
+        Fcityname_hk = #{fcitynameHk,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynameLocal != null">
+        Fcityname_local = #{fcitynameLocal,jdbcType=VARCHAR},
+      </if>
+      <if test="fcountry != null">
+        Fcountry = #{fcountry,jdbcType=INTEGER},
+      </if>
+      <if test="fadmin != null">
+        Fadmin = #{fadmin,jdbcType=INTEGER},
+      </if>
+      <if test="fparentNode != null">
+        Fparent_node = #{fparentNode,jdbcType=INTEGER},
+      </if>
+      <if test="fparent != null">
+        Fparent = #{fparent,jdbcType=INTEGER},
+      </if>
+      <if test="flat != null">
+        FLat = #{flat,jdbcType=DOUBLE},
+      </if>
+      <if test="flon != null">
+        FLon = #{flon,jdbcType=DOUBLE},
+      </if>
+      <if test="fdeleted != null">
+        Fdeleted = #{fdeleted,jdbcType=TINYINT},
+      </if>
+      <if test="faccuname != null">
+        Faccuname = #{faccuname,jdbcType=VARCHAR},
+      </if>
+      <if test="fisNode != null">
+        Fis_node = #{fisNode,jdbcType=TINYINT},
+      </if>
+      <if test="ftimeZone != null">
+        Ftime_zone = #{ftimeZone,jdbcType=VARCHAR},
+      </if>
+      <if test="fprovinceCn != null">
+        Fprovince_cn = #{fprovinceCn,jdbcType=VARCHAR},
+      </if>
+      <if test="fpersistence != null">
+        Fpersistence = #{fpersistence,jdbcType=TINYINT},
+      </if>
+      <if test="fcitynameZy != null">
+        Fcityname_zy = #{fcitynameZy,jdbcType=VARCHAR},
+      </if>
+      <if test="fcitynameZyj != null">
+        Fcityname_zyj = #{fcitynameZyj,jdbcType=VARCHAR},
+      </if>
+      <if test="ftag != null">
+        Ftag = #{ftag,jdbcType=TINYINT},
+      </if>
+      <if test="falias != null">
+        Falias = #{falias,jdbcType=VARCHAR},
+      </if>
+      <if test="frank != null">
+        Frank = #{frank,jdbcType=INTEGER},
+      </if>
+    </set>
+    where Fid = #{fid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hyx.springmvc.bean.City">
+    update city
+    set Fcityname_cn = #{fcitynameCn,jdbcType=VARCHAR},
+      Fcityname_en = #{fcitynameEn,jdbcType=VARCHAR},
+      Fcityname_py = #{fcitynamePy,jdbcType=VARCHAR},
+      Fcityname_pyj = #{fcitynamePyj,jdbcType=VARCHAR},
+      Fcityname_tw = #{fcitynameTw,jdbcType=VARCHAR},
+      Fcityname_hk = #{fcitynameHk,jdbcType=VARCHAR},
+      Fcityname_local = #{fcitynameLocal,jdbcType=VARCHAR},
+      Fcountry = #{fcountry,jdbcType=INTEGER},
+      Fadmin = #{fadmin,jdbcType=INTEGER},
+      Fparent_node = #{fparentNode,jdbcType=INTEGER},
+      Fparent = #{fparent,jdbcType=INTEGER},
+      FLat = #{flat,jdbcType=DOUBLE},
+      FLon = #{flon,jdbcType=DOUBLE},
+      Fdeleted = #{fdeleted,jdbcType=TINYINT},
+      Faccuname = #{faccuname,jdbcType=VARCHAR},
+      Fis_node = #{fisNode,jdbcType=TINYINT},
+      Ftime_zone = #{ftimeZone,jdbcType=VARCHAR},
+      Fprovince_cn = #{fprovinceCn,jdbcType=VARCHAR},
+      Fpersistence = #{fpersistence,jdbcType=TINYINT},
+      Fcityname_zy = #{fcitynameZy,jdbcType=VARCHAR},
+      Fcityname_zyj = #{fcitynameZyj,jdbcType=VARCHAR},
+      Ftag = #{ftag,jdbcType=TINYINT},
+      Falias = #{falias,jdbcType=VARCHAR},
+      Frank = #{frank,jdbcType=INTEGER}
+    where Fid = #{fid,jdbcType=INTEGER}
+  </update>
+</mapper>

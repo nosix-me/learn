@@ -1,0 +1,67 @@
+[Thread-0] 06/25-14:51:53,275 [INFO ] : Verifying properties
+[Thread-0] 06/25-14:51:53,320 [INFO ] : Property auto.commit.interval.ms is overridden to 1000
+[Thread-0] 06/25-14:51:53,320 [INFO ] : Property group.id is overridden to group1
+[Thread-0] 06/25-14:51:53,320 [INFO ] : Property zookeeper.connect is overridden to 210.14.155.218:2181/kafka
+[Thread-0] 06/25-14:51:53,321 [INFO ] : Property zookeeper.session.timeout.ms is overridden to 1000
+[Thread-0] 06/25-14:51:53,321 [INFO ] : Property zookeeper.sync.time.ms is overridden to 200
+[Thread-0] 06/25-14:51:53,412 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], Connecting to zookeeper instance at 210.14.155.218:2181/kafka
+[ZkClient-EventThread-14-210.14.155.218:2181/kafka] 06/25-14:51:53,426 [INFO ] : Starting ZkClient event thread.
+[Thread-0] 06/25-14:51:53,437 [INFO ] : Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+[Thread-0] 06/25-14:51:53,437 [INFO ] : Client environment:host.name=192.168.29.59
+[Thread-0] 06/25-14:51:53,438 [INFO ] : Client environment:java.version=1.7.0_76
+[Thread-0] 06/25-14:51:53,438 [INFO ] : Client environment:java.vendor=Oracle Corporation
+[Thread-0] 06/25-14:51:53,438 [INFO ] : Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home/jre
+[Thread-0] 06/25-14:51:53,438 [INFO ] : Client environment:java.class.path=/Users/nosix/Projects/workspace/learn/kafka/target/classes:/Users/nosix/.m2/repository/org/springframework/spring-core/3.2.9.RELEASE/spring-core-3.2.9.RELEASE.jar:/Users/nosix/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/nosix/.m2/repository/org/springframework/spring-beans/3.2.9.RELEASE/spring-beans-3.2.9.RELEASE.jar:/Users/nosix/.m2/repository/org/springframework/spring-aop/3.2.9.RELEASE/spring-aop-3.2.9.RELEASE.jar:/Users/nosix/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/nosix/.m2/repository/org/springframework/spring-expression/3.2.9.RELEASE/spring-expression-3.2.9.RELEASE.jar:/Users/nosix/.m2/repository/org/springframework/spring-context/3.2.9.RELEASE/spring-context-3.2.9.RELEASE.jar:/Users/nosix/.m2/repository/org/springframework/spring-tx/3.2.9.RELEASE/spring-tx-3.2.9.RELEASE.jar:/Users/nosix/.m2/repository/org/springframework/spring-context-support/3.2.9.RELEASE/spring-context-support-3.2.9.RELEASE.jar:/Users/nosix/.m2/repository/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar:/Users/nosix/.m2/repository/org/apache/kafka/kafka_2.11/0.9.0.1/kafka_2.11-0.9.0.1.jar:/Users/nosix/.m2/repository/com/101tec/zkclient/0.7/zkclient-0.7.jar:/Users/nosix/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/Users/nosix/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Users/nosix/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/nosix/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/nosix/.m2/repository/org/apache/kafka/kafka-clients/0.9.0.1/kafka-clients-0.9.0.1.jar:/Users/nosix/.m2/repository/org/xerial/snappy/snappy-java/1.1.1.7/snappy-java-1.1.1.7.jar:/Users/nosix/.m2/repository/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.jar:/Users/nosix/.m2/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Users/nosix/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.jar:/Users/nosix/.m2/repository/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar:/Users/nosix/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar:/Users/nosix/.m2/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Users/nosix/.m2/repository/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.jar:/Users/nosix/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/nosix/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/nosix/.m2/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar
+[Thread-0] 06/25-14:51:53,439 [INFO ] : Client environment:java.library.path=/Users/nosix/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+[Thread-0] 06/25-14:51:53,439 [INFO ] : Client environment:java.io.tmpdir=/var/folders/62/s0cvxgjd6fx99n4_wn1vqgvc0000gn/T/
+[Thread-0] 06/25-14:51:53,440 [INFO ] : Client environment:java.compiler=<NA>
+[Thread-0] 06/25-14:51:53,440 [INFO ] : Client environment:os.name=Mac OS X
+[Thread-0] 06/25-14:51:53,440 [INFO ] : Client environment:os.arch=x86_64
+[Thread-0] 06/25-14:51:53,440 [INFO ] : Client environment:os.version=10.10.5
+[Thread-0] 06/25-14:51:53,441 [INFO ] : Client environment:user.name=nosix
+[Thread-0] 06/25-14:51:53,441 [INFO ] : Client environment:user.home=/Users/nosix
+[Thread-0] 06/25-14:51:53,441 [INFO ] : Client environment:user.dir=/Users/nosix/Projects/workspace/learn/kafka
+[Thread-0] 06/25-14:51:53,442 [INFO ] : Initiating client connection, connectString=210.14.155.218:2181/kafka sessionTimeout=1000 watcher=org.I0Itec.zkclient.ZkClient@10099d2
+[Thread-0] 06/25-14:51:53,460 [INFO ] : Waiting for keeper state SyncConnected
+[Thread-0-SendThread(210.14.155.218:2181)] 06/25-14:51:53,464 [INFO ] : Opening socket connection to server 210.14.155.218/210.14.155.218:2181. Will not attempt to authenticate using SASL (unknown error)
+[Thread-0-SendThread(210.14.155.218:2181)] 06/25-14:51:53,482 [INFO ] : Socket connection established to 210.14.155.218/210.14.155.218:2181, initiating session
+[Thread-0-SendThread(210.14.155.218:2181)] 06/25-14:51:53,628 [INFO ] : Session establishment complete on server 210.14.155.218/210.14.155.218:2181, sessionid = 0x154dedc8a9a0061, negotiated timeout = 4000
+[Thread-0-EventThread] 06/25-14:51:53,630 [INFO ] : zookeeper state changed (SyncConnected)
+[Thread-0] 06/25-14:51:53,651 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], starting auto committer every 1000 ms
+[Thread-0] 06/25-14:51:53,710 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], begin registering consumer group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9 in ZK
+[Thread-0] 06/25-14:51:53,750 [INFO ] : Creating /consumers/group1/ids/group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9 (is it secure? false)
+[Thread-0] 06/25-14:51:53,782 [INFO ] : Result of znode creation is: OK
+[Thread-0] 06/25-14:51:53,783 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], end registering consumer group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9 in ZK
+[group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9_watcher_executor] 06/25-14:51:53,790 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], starting watcher executor thread for consumer group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9
+[Thread-0] 06/25-14:51:53,841 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], begin rebalancing consumer group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9 try #0
+[Thread-0] 06/25-14:51:54,079 [INFO ] : [ConsumerFetcherManager-1466837513646] Stopping leader finder thread
+[Thread-0] 06/25-14:51:54,080 [INFO ] : [ConsumerFetcherManager-1466837513646] Stopping all fetchers
+[Thread-0] 06/25-14:51:54,081 [INFO ] : [ConsumerFetcherManager-1466837513646] All connections stopped
+[Thread-0] 06/25-14:51:54,083 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], Cleared all relevant queues for this fetcher
+[Thread-0] 06/25-14:51:54,084 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], Cleared the data chunks in all the consumer message iterators
+[Thread-0] 06/25-14:51:54,085 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], Committing all offsets after clearing the fetcher queues
+[Thread-0] 06/25-14:51:54,088 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], Releasing partition ownership
+[Thread-0] 06/25-14:51:54,188 [INFO ] : Consumer group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9 rebalancing the following partitions: ArrayBuffer(0) for topic shortpush with consumers: List(group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-0, group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-1, group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-2, group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-3, group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-4, group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-5, group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-6, group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-7, group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-8, group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-9)
+[Thread-0] 06/25-14:51:54,190 [INFO ] : group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-0 attempting to claim partition 0
+[Thread-0] 06/25-14:51:54,192 [WARN ] : No broker partitions consumed by consumer thread group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-1 for topic shortpush
+[Thread-0] 06/25-14:51:54,192 [WARN ] : No broker partitions consumed by consumer thread group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-2 for topic shortpush
+[Thread-0] 06/25-14:51:54,193 [WARN ] : No broker partitions consumed by consumer thread group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-3 for topic shortpush
+[Thread-0] 06/25-14:51:54,193 [WARN ] : No broker partitions consumed by consumer thread group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-4 for topic shortpush
+[Thread-0] 06/25-14:51:54,194 [WARN ] : No broker partitions consumed by consumer thread group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-5 for topic shortpush
+[Thread-0] 06/25-14:51:54,194 [WARN ] : No broker partitions consumed by consumer thread group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-6 for topic shortpush
+[Thread-0] 06/25-14:51:54,194 [WARN ] : No broker partitions consumed by consumer thread group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-7 for topic shortpush
+[Thread-0] 06/25-14:51:54,195 [WARN ] : No broker partitions consumed by consumer thread group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-8 for topic shortpush
+[Thread-0] 06/25-14:51:54,195 [WARN ] : No broker partitions consumed by consumer thread group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-9 for topic shortpush
+[Thread-0] 06/25-14:51:54,273 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-0 successfully owned partition 0 for topic shortpush
+[Thread-0] 06/25-14:51:54,298 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], Consumer group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9 selected partitions : shortpush:0: fetched offset = 7828607980: consumed offset = 7828607980
+[group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-leader-finder-thread] 06/25-14:51:54,301 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-leader-finder-thread], Starting 
+[Thread-0] 06/25-14:51:54,301 [INFO ] : [group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9], end rebalancing consumer group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9 try #0
+[group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-leader-finder-thread] 06/25-14:51:54,342 [INFO ] : Verifying properties
+[group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-leader-finder-thread] 06/25-14:51:54,342 [INFO ] : Property client.id is overridden to group1
+[group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-leader-finder-thread] 06/25-14:51:54,342 [INFO ] : Property metadata.broker.list is overridden to bj8:9092
+[group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-leader-finder-thread] 06/25-14:51:54,343 [INFO ] : Property request.timeout.ms is overridden to 30000
+[group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-leader-finder-thread] 06/25-14:51:54,364 [INFO ] : Fetching metadata from broker BrokerEndPoint(1,bj8,9092) with correlation id 0 for 1 topic(s) Set(shortpush)
+[group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-leader-finder-thread] 06/25-14:51:54,384 [INFO ] : Connected to bj8:9092 for producing
+[group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-leader-finder-thread] 06/25-14:51:54,411 [INFO ] : Disconnecting from bj8:9092
+[ConsumerFetcherThread-group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-0-1] 06/25-14:51:54,433 [INFO ] : [ConsumerFetcherThread-group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-0-1], Starting 
+[group1_nosixdeMacBook-Pro.local-1466837513410-ffc293b9-leader-finder-thread] 06/25-14:51:54,437 [INFO ] : [ConsumerFetcherManager-1466837513646] Added fetcher for partitions ArrayBuffer([[shortpush,0], initOffset 7828607980 to broker BrokerEndPoint(1,bj8,9092)] )

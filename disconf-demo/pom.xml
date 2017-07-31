@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.hyx</groupId>
+    <artifactId>learn</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>disconf-demo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>disconf-demo</name>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+  		<dependency>
+		    <groupId>com.baidu.disconf</groupId>
+		    <artifactId>disconf-client</artifactId>
+		    <version>2.6.36</version>
+		</dependency>
+    	<dependency>
+			<groupId>com.moji</groupId>
+			<artifactId>lib-core</artifactId>
+			<version>1.0.0</version>
+			<type>pom</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.moji</groupId>
+			<artifactId>lib-common</artifactId>
+			<version>1.0.0</version>
+			<type>pom</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.moji</groupId>
+			<artifactId>lib-local</artifactId>
+			<version>1.0.0</version>
+			<type>pom</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.moji</groupId>
+			<artifactId>util-common</artifactId>
+			<version>2.0.0</version>
+			<type>jar</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.moji</groupId>
+			<artifactId>util-redis</artifactId>
+			<version>2.0.0</version>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.moji</groupId>
+			<artifactId>core-framework</artifactId>
+			<version>1.0.0</version>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.moji</groupId>
+			<artifactId>weather-bean</artifactId>
+			<version>1.0.0</version>
+			<type>jar</type>
+		</dependency>
+		
+		<dependency>
+	      	<groupId>mysql</groupId>
+	      	<artifactId>mysql-connector-java</artifactId>
+	      	<version>5.1.15</version>    	  
+	    </dependency>
+	    
+	    <dependency>
+	      	<groupId>commons-dbcp</groupId>
+	      	<artifactId>commons-dbcp</artifactId>
+	      	<version>1.4</version>    	  
+	    </dependency>
+	    
+		<dependency>  
+			<groupId>javax.servlet</groupId>  
+			<artifactId>servlet-api</artifactId>  
+			<version>2.5</version>  
+			<scope>provided</scope>  
+		</dependency> 
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+	    </dependency>
+	    
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>3.2.4.RELEASE</version>
+			<scope>test</scope>
+	    </dependency>
+	    
+	    <dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>18.0</version>
+		</dependency>
+  </dependencies>
+</project>
