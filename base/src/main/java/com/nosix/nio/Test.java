@@ -8,7 +8,6 @@ public class Test {
 
 		ByteBuffer byteBuffer = ByteBuffer.allocate(256);
 		byteBuffer.flip();
-		byteBuffer.
 	}
 
 }

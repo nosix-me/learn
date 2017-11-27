@@ -13,7 +13,7 @@
 			http://www.springframework.org/schema/aop 
 			http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">			
 	<!-- 加载配置文件 -->
-	<bean id="propertyConfigurer" class="com.moji.advertisement.config.util.PropertyUtil">
+	<bean id="propertyConfigurer" class="em.nosix.tools.config.hotconfig.util.PropertyUtil">
 		<property name="locations">
 			<list>
 				<value>classpath:test.properties</value>

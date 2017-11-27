@@ -12,6 +12,14 @@ import net.sf.cglib.proxy.NoOp;
 
 class SubClass implements MethodInterceptor {
 	
+	/**
+	 * cglib动态代理
+		1、 CGlib是一个强大的,高性能,高质量的Code生成类库。它可以在运行期扩展Java类与实现Java接口。 
+		2、 用CGlib生成代理类是目标类的子类。 
+		3、 用CGlib生成 代理类不需要接口 
+		4、 用CGLib生成的代理类重写了父类的各个方法。 
+		5、 拦截器中的intercept方法内容正好就是代理类中的方法体
+	 */
 	//代理类需要代理的方法
 	@Override
 	public Object intercept(Object obj, Method method, Object[] args,

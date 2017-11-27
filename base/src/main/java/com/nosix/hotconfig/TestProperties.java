@@ -4,8 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import com.moji.advertisement.config.BaseHandler;
-import com.moji.advertisement.config.annotation.HConfig;
+import em.nosix.tools.config.common.BaseHandler;
+import em.nosix.tools.config.hotconfig.annotation.HConfig;
+
 
 /**
  * Unit test for simple App.

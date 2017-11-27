@@ -5,7 +5,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.moji.advertisement.config.HotConfig;
+import em.nosix.tools.config.hotconfig.HotConfig;
+
 
 
 public class Test {

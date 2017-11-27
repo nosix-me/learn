@@ -28,5 +28,7 @@
     <module>moji-flume-extension</module>
     <module>aliEcs</module>
     <module>DynamicProxy</module>
+    <module>thrift</module>
+    <module>apollo</module>
   </modules>
 </project>
